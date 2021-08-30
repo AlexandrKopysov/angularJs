@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Уроки AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- Урок 1 - привязка (двусторонний датабиндинг) -->
+    <!-- <div ng-app>   
+        <input type="text" ng-model="Hello">
+        {{Hello + " World"}}
+    </div>         -->
+    <!-- Конец 1 урока -->
+
+
+    <!-- Урок 2 - контроллеры -->
+    <!-- <div ng-app='app'>
+        {{1 + 1}}
+        <div ng-controller='myCtrl'>
+            {{hello}}
+            <input type="text" ng-model='myBook'>
+            {{myBook}}
+        </div>
+    </div> -->
+    <!-- Конец 2 урока -->
+
+    <!-- Урок 3 - обмен данными между контроллерами-->
+    <!-- <div ng-app='app'>
+        <div ng-controller='firstCtrl'>
+            <input type="text" ng-model='myFactory.hello'>
+        </div>
+        <div ng-controller='secondCtrl'>
+            <input type="text" ng-model='myFactory.hello'>
+        </div>
+    </div> -->
+    <!-- Конец 3 урока -->
+
+    <!-- Урок 4 - методы внутри контроллера -->
+    <!-- <div ng-app='app'>
+        <div ng-controller='firstCtrl'>            
+            {{hello}}
+            {{getBookmark()}}
+            <button ng-click='setHello("Foo")'>Foo</button>
+            <button ng-click='setHello("Bar")'>Bar</button>            
+            {{myFactory.hello()}}
+        </div>
+    </div> -->
+    <!-- Конец 4 урока -->
+
+    <!-- Урок 5 - вложенные контроллеры -->
+    <!-- <div ng-app='app'>
+        <div ng-controller='myBooksCtrl'>
+            <div ng-controller='angularBooksCtrl'>
+                <button ng-click='showBook()'>Show Angular Book</button>
+            </div>
+            <div ng-controller='emberBooksCtrl'>
+                <button ng-click='showBook()'>Show Ember Book</button>
+            </div>    
+        </div>
+    </div>     -->
+    <!-- Конец 5 урока -->
+
+    <!-- Урок 6 - Controller as синтаксис -->
+    <!-- <div ng-app='app'>
+        <div ng-controller='mainCtrl as mainCtrl'>
+            <div ng-controller='firstCtrl as firstCtrl'>
+                <div ng-controller='secondCtrl as secondCtrl'>
+                    {{mainCtrl.myLesson}}
+                    <button ng-click='mainCtrl.addLesson()'>Add Lesson</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Конец 6 урока -->
+
+    <!-- Урок 7 - Пишем простую директиву -->
+    <!-- <div ng-app='app'>
+        <div foo>foo</div>
+    </div>     -->
+    <!-- Конец 7 урока -->
+
+    <!-- Урок 8 - Фильтры -->
+    <!-- <div ng-app='app'>
+        <div ng-controller="mainCtrl">
+            {{money1 | moneyFilter}}
+            {{money2 | moneyFilter}}
+            {{money3 | moneyFilter}}
+        </div>
+    </div>     -->
+    <!-- Конец 8 урока -->
+
+    <!-- Урок 9 - ограничение в директивах  -->
+    <!-- <div ng-app='app'> -->
+    <!-- Директива работает через атрибут -->
+    <!-- <div foo-bar>FooBar1</div> -->
+    <!-- Директива работает через элемент -->
+    <!-- <foo-bar>FooBar2</foo-bar> -->
+    <!-- Директива работает через Класс -->
+    <!-- <div class="foo-bar"> FooBar3</div> -->
+    <!-- Директива работает через коментарий -->
+    <!-- directive: foo-bar-->
+    <!-- </div> -->
+    <!-- Конец 9 урока -->
+
+    <!-- Урок 10 - Шаблоны в директивах -->
+    <!-- <div ng-app='app'>
+        <foo-bar></foo-bar>
+    </div> -->
+    <!-- Конец 10 урока -->
+
+    <!-- Урок 11 - Transclude  в директивах -->
+    <!-- <div ng-app='app'>
+        <div ng-controller="mainCtrl">
+            <foo-bar>This is {{name}}</foo-bar>
+        </div>       
+    </div>    -->
+    <!-- Конец 11 урока -->
+
+    <!-- Урок 12 - Template URL -->
+    <!-- <div ng-app='app'>
+        <foo-bar>            
+        </foo-bar>        
+        <script type="text/ng-template" id='bookmarks.html'>
+            <div ng-repeat='bookmark in bookmarks'>{{bookmark.name}}</div>
+        </script>
+    </div> -->
+    <!-- Конец 12 урока -->
+
+    <!-- Урок 13 - Кешируем Шаблоны -->
+    <!-- <div ng-app='app'>
+        <foo-bar>
+        </foo-bar>
+    </div> -->
+    <!-- Конец 13 урока -->
+
+    <!-- Урок 14 Общение контроллера и директивы  -->
+    <!-- <div ng-app='app'>
+        <div ng-controller='mainCtrl'>
+            {{hello}}
+        </div>
+        <post></post>
+    </div> -->
+    <!-- Конец 14 урока -->
+
+    <!-- Урок 15 Scope true в директивах  -->
+    <!-- <div ng-app='app'>
+        <div ng-controller='booksCtrl'>
+            This is controller name: {{name}}
+            <book></book>
+        </div>        
+    </div> -->
+    <!-- Конец 15 урока -->
+
+</body>
+
+</html>
