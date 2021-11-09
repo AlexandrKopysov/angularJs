@@ -54,12 +54,12 @@
 // var app = angular.module('app', []);
 // app.controller('myBooksCtrl' , function($scope){
 //     $scope.showBook = function (){
-//         console.log('Whis is some book');
+//         console.log('This is some book');
 //     }
 // });
 // app.controller('angularBooksCtrl' , function($scope){
 //     $scope.showBook = function (){
-//         console.log('Whis is angularJs book');
+//         console.log('This is angularJs book');
 //     }
 // });
 // app.controller('emberBooksCtrl' , function($scope){
@@ -173,7 +173,6 @@
 //             name : "Angular 8.0"
 //         }
 //     ]
-
 //     return{        
 //         // template: "<div>Hello {{name}}</div>", /*То, что находиться внутри директивы, в том числе и разметка*/
 //         template: "<div ng-repeat = 'bookmark in myBookmarks'>{{bookmark.name}}</div>", 
@@ -247,7 +246,7 @@
 // });
 
 // app.directive('fooBar' , function($templateCache){        
-    
+
 //     var bookmarks = [
 //         {
 //             id: 1,
